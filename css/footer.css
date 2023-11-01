@@ -93,7 +93,8 @@
     #cs-footer-274 .cs-nav-link {
         font-size: 1rem;
         text-decoration: none;
-        line-height: 1.5em;
+        line-height: 2em;
+        padding: 
         color: var(--bodyTextColor);
         position: relative;
     }
