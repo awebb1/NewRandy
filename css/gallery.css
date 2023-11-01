@@ -64,5 +64,8 @@
     body.dark-mode #gallery-1446 .cs-title {
         color: var(--bodyTextColorWhite);
     }
+    body.dark-mode #gallery-1446 .cs-topper {
+        color: var(--primaryLight);
+    }
 }
                                 

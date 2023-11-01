@@ -240,6 +240,14 @@
     body.dark-mode #hero-408 .cs-button-transparent {
         color: var(--bodyTextColorWhite);
     }
+
+    body.dark-mode #hero-408 .cs-color {
+        color: var(--primaryLight);
+    }
+
+    body.dark-mode #hero-408 .cs-button-solid {
+        background-color: var(--primaryLight);
+    }
     body.dark-mode #hero-408 .cs-logo {
         filter: grayscale(1) brightness(400%);
     }
