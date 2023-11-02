@@ -4,13 +4,13 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #reviews-981 {
+    #testimonials {
         background-color: rgba(0, 0, 0, 0.05);
         padding: var(--sectionPadding);
         position: relative;
         z-index: 1;
     }
-    #reviews-981 .cs-container {
+    #testimonials .cs-container {
         width: 100%;
         /* changes to 1280px at tablet */
         max-width: 36.5rem;
@@ -21,7 +21,7 @@
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
-    #reviews-981 .cs-content {
+    #testimonials .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -32,19 +32,19 @@
         align-items: center;
     }
 
-    #reviews-981 .cs-title {
+    #testimonials .cs-title {
         /* 20 characters including spaces */
         max-width: 20ch;
         margin: 0;
     }
-    #reviews-981 .cs-card-group {
+    #testimonials .cs-card-group {
         width: 100%;
         padding: 0;
         margin: 0;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
     }
-    #reviews-981 .cs-item {
+    #testimonials .cs-item {
         list-style: none;
         width: 100%;
         /* 16px - 32px */
@@ -58,10 +58,10 @@
         grid-column: span 12;
         position: relative;
     }
-    #reviews-981 .cs-item:last-of-type:after {
+    #testimonials .cs-item:last-of-type:after {
         display: none;
     }
-    #reviews-981 .cs-item:after {
+    #testimonials .cs-item:after {
         content: "";
         width: 100%;
         height: 1px;
@@ -71,7 +71,7 @@
         position: relative;
         display: block;
     }
-    #reviews-981 .cs-flex-group {
+    #testimonials .cs-flex-group {
         width: 100%;
         margin: 0 0 1.75rem 0;
         display: flex;
@@ -79,7 +79,7 @@
         align-items: center;
         gap: 0.75rem;
     }
-    #reviews-981 .cs-profile {
+    #testimonials .cs-profile {
         width: 3.125rem;
         height: 3.125rem;
         border: 2px solid #bababa;
@@ -90,7 +90,7 @@
         position: relative;
         display: block;
     }
-    #reviews-981 .cs-profile img {
+    #testimonials .cs-profile img {
         position: absolute;
         top: 0;
         left: 0;
@@ -99,7 +99,7 @@
         /* makes the image behave like a background image */
         object-fit: cover;
     }
-    #reviews-981 .cs-name {
+    #testimonials .cs-name {
         /* 20px - 25px */
         font-size: clamp(1.25rem, 2vw, 1.5625rem);
         line-height: 1.5em;
@@ -108,7 +108,7 @@
         color: var(--primary);
         display: block;
     }
-    #reviews-981 .cs-job {
+    #testimonials .cs-job {
         font-size: 0.875rem;
         line-height: 1.2em;
         font-weight: 400;
@@ -116,7 +116,7 @@
         color: var(--bodyTextColor);
         display: block;
     }
-    #reviews-981 .cs-review {
+    #testimonials .cs-review {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
@@ -127,17 +127,17 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #reviews-981 .cs-container {
+    #testimonials .cs-container {
         max-width: 80rem;
     }
-    #reviews-981 .cs-card-group {
+    #testimonials .cs-card-group {
         gap: 2.5rem;
     }
-    #reviews-981 .cs-item {
+    #testimonials .cs-item {
         grid-column: span 4;
         position: relative;
     }
-    #reviews-981 .cs-item:after {
+    #testimonials .cs-item:after {
         width: 1px;
         height: 80%;
         margin: 0;
@@ -149,26 +149,26 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-    body.dark-mode #reviews-981 .cs-topper,
-    body.dark-mode #reviews-981 .cs-name {
+    body.dark-mode #testimonials .cs-topper,
+    body.dark-mode #testimonials .cs-name {
         color: var(--primaryLight);
     }
-    body.dark-mode #reviews-981 .cs-title,
-    body.dark-mode #reviews-981 .cs-text,
-    body.dark-mode #reviews-981 .cs-review,
-    body.dark-mode #reviews-981 .cs-job,
-    body.dark-mode #reviews-981 .cs-desc {
+    body.dark-mode #testimonials .cs-title,
+    body.dark-mode #testimonials .cs-text,
+    body.dark-mode #testimonials .cs-review,
+    body.dark-mode #testimonials .cs-job,
+    body.dark-mode #testimonials .cs-desc {
         color: var(--bodyTextColorWhite);
     }
-    body.dark-mode #reviews-981 .cs-text,
-    body.dark-mode #reviews-981 .cs-desc,
-    body.dark-mode #reviews-981 .cs-review {
+    body.dark-mode #testimonials .cs-text,
+    body.dark-mode #testimonials .cs-desc,
+    body.dark-mode #testimonials .cs-review {
         opacity: 0.8;
     }
-    body.dark-mode #reviews-981 .cs-item:after {
+    body.dark-mode #testimonials .cs-item:after {
         opacity: 0.2;
     }
-    body.dark-mode #reviews-981 {
+    body.dark-mode #testimonials {
         background-color: rgba(0, 0, 0, 0.2);
     }
 }

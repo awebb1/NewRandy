@@ -1,16 +1,16 @@
 /*-- -------------------------- -->
-<---            Hero            -->
+<---            hero            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-408 {
+    #hero {
         padding: var(--sectionPadding);
         /* 112px - 200px */
         padding-top: clamp(7rem, 15vw, 12.5rem);
         padding-right: 0;
     }
-    #hero-408 .cs-container {
+    #hero .cs-container {
         width: 100%;
         /* changes to 100% at tablet */
         max-width: 34.375rem;
@@ -22,7 +22,7 @@
         /* 36px - 100px */
         gap: clamp(2.25rem, 10vw, 6.25rem);
     }
-    #hero-408 .cs-content {
+    #hero .cs-content {
         max-width: 39.375rem;
         padding-right: 1rem;
         display: flex;
@@ -30,7 +30,7 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    #hero-408 .cs-title {
+    #hero .cs-title {
         /* 31px - 61px */
         font-size: clamp(1.9375rem, 4.4vw, 3.8125rem);
         font-weight: 900;
@@ -42,11 +42,11 @@
         color: var(--headerColor);
         position: relative;
     }
-    #hero-408 .cs-color {
+    #hero .cs-color {
         color: var(--primary);
         display: block;
     }
-    #hero-408 .cs-text {
+    #hero .cs-text {
         /* 16px - 25px */
         font-size: clamp(1rem, 2vw, 1.5625rem);
         line-height: 1.5em;
@@ -58,7 +58,7 @@
         margin-bottom: clamp(1.5rem, 4.2vw, 3rem);
         color: var(--bodyTextColor);
     }
-    #hero-408 .cs-button-solid {
+    #hero .cs-button-solid {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -78,7 +78,7 @@
         /* prevents padding from adding to the width */
         box-sizing: border-box;
     }
-    #hero-408 .cs-button-solid:before {
+    #hero .cs-button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
@@ -91,10 +91,10 @@
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #hero-408 .cs-button-solid:hover:before {
+    #hero .cs-button-solid:hover:before {
         width: 100%;
     }
-    #hero-408 .cs-button-transparent {
+    #hero .cs-button-transparent {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -116,11 +116,11 @@
             background-color 0.3s,
             color 0.3s;
     }
-    #hero-408 .cs-button-transparent:hover {
+    #hero .cs-button-transparent:hover {
         background-color: var(--primary);
         color: #fff;
     }
-    #hero-408 .cs-header {
+    #hero .cs-header {
         /* 14px - 20px */
         font-size: clamp(0.875rem, 1.5vw, 1.25rem);
         line-height: 1.5em;
@@ -130,19 +130,19 @@
         color: var(--bodyTextColor);
         display: block;
     }
-    #hero-408 .cs-logo-group {
+    #hero .cs-logo-group {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    #hero-408 .cs-logo {
+    #hero .cs-logo {
         width: auto;
         /* 18px - 32px */
         height: clamp(1.125rem, 1.5vw, 2rem);
         filter: grayscale(1);
     }
-    #hero-408 .cs-stat-group {
+    #hero .cs-stat-group {
         width: 100%;
         border-radius: 1.25rem 0 0 1.25rem;
         aspect-ratio: 0.92696629;
@@ -155,7 +155,7 @@
         position: relative;
         z-index: 1;
     }
-    #hero-408 .cs-stat-box {
+    #hero .cs-stat-box {
         width: 50%;
         /* changes at tablet */
         height: 9.125rem;
@@ -169,13 +169,13 @@
         justify-content: center;
         align-items: center;
     }
-    #hero-408 .cs-stat-box:nth-of-type(1) {
+    #hero .cs-stat-box:nth-of-type(1) {
         background-color: rgba(23, 99, 22, 0.96);
     }
-    #hero-408 .cs-stat-box:nth-of-type(2) {
+    #hero .cs-stat-box:nth-of-type(2) {
         background-color: rgba(34, 149, 33, 0.96);
     }
-    #hero-408 .cs-stat {
+    #hero .cs-stat {
         /* 25px - 61px */
         font-size: clamp(1.5625rem, 3.5vw, 3.8125rem);
         line-height: 1.2em;
@@ -183,14 +183,14 @@
         margin: 0;
         display: block;
     }
-    #hero-408 .cs-desc {
+    #hero .cs-desc {
         /* 14px - 20px */
         font-size: clamp(0.875rem, 1.6vw, 1.25rem);
         line-height: 1.2em;
         margin: 0.25rem 0 0 0;
         display: block;
     }
-    #hero-408 .cs-background {
+    #hero .cs-background {
         width: 100%;
         height: 100%;
         top: 0;
@@ -198,7 +198,7 @@
         position: absolute;
         z-index: -1;
     }
-    #hero-408 .cs-background img {
+    #hero .cs-background img {
         position: absolute;
         top: 0;
         left: 0;
@@ -206,49 +206,53 @@
         width: 100%;
         object-fit: cover;
     }
+    #hero #name {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #hero-408 {
+    #hero {
         padding-right: 0;
     }
-    #hero-408 .cs-container {
+    #hero .cs-container {
         max-width: 100%;
         flex-direction: row;
         justify-content: flex-end;
     }
-    #hero-408 .cs-content {
+    #hero .cs-content {
         width: 45%;
         padding: 0;
     }
-    #hero-408 .cs-stat-group {
+    #hero .cs-stat-group {
         width: 45%;
         max-height: 46.0625rem;
         aspect-ratio: 0.92647059;
         flex: none;
     }
-    #hero-408 .cs-stat-box {
+    #hero .cs-stat-box {
         /* 126px - 221px */
         height: clamp(7.875rem, 18vw, 13.8125rem);
     }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-    body.dark-mode #hero-408 .cs-title,
-    body.dark-mode #hero-408 .cs-text,
-    body.dark-mode #hero-408 .cs-header,
-    body.dark-mode #hero-408 .cs-button-transparent {
+    body.dark-mode #hero .cs-title,
+    body.dark-mode #hero .cs-text,
+    body.dark-mode #hero .cs-header,
+    body.dark-mode #hero .cs-button-transparent {
         color: var(--bodyTextColorWhite);
     }
 
-    body.dark-mode #hero-408 .cs-color {
+    body.dark-mode #hero .cs-color {
         color: var(--primaryLight);
     }
 
-    body.dark-mode #hero-408 .cs-button-solid {
+    body.dark-mode #hero .cs-button-solid {
         background-color: var(--primaryLight);
     }
-    body.dark-mode #hero-408 .cs-logo {
+    body.dark-mode #hero .cs-logo {
         filter: grayscale(1) brightness(400%);
     }
 }
